@@ -49,6 +49,28 @@ class TaskService {
     return data;
   }
 
+  async updateTask(taskId, taskData) {
+    const response = await fetch(`${API_BASE_URL}/tasks/${taskId}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(taskData),
+    });
+
+    const data = await parseResponseBody(response).catch(() => null);
+
+    if (!response.ok) {
+      throw new Error(data?.message || `HTTP error! status: ${response.status}`);
+    }
+
+    if (!data) {
+      throw new Error("Server returned an empty response while updating the task");
+    }
+
+    return data;
+  }
+
   async deleteTask(taskId) {
     const response = await fetch(`${API_BASE_URL}/tasks/${taskId}`, {
       method: "DELETE",
