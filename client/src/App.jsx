@@ -88,7 +88,7 @@ function App() {
     fetchTasks();
   };
 
-  // let sangam = 'unused variable here';
+//  let sd = "sample var"
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-100 via-gray-50 to-slate-200/90 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
