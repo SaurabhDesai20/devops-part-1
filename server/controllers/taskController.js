@@ -75,7 +75,7 @@ const updateTask = async (req, res) => {
     const task = await Task.findByIdAndUpdate(
       id,
       { title: title.trim(), description: description.trim() },
-      { new: true, runValidators: true }
+      { new: true, runValidators: true },
     );
 
     if (!task) {
