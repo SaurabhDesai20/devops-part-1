@@ -98,7 +98,7 @@ function App() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
             <div>
               <h1 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50">
-                Task Manager
+                Task Manager Edited
               </h1>
               <p className="mt-1 text-[15px] text-gray-600 dark:text-gray-400">
                 Simple task management for DevOps demo
@@ -113,7 +113,7 @@ function App() {
                 }}
                 className="shrink-0 rounded-xl bg-gray-900 px-6 py-2.5 font-semibold text-white shadow-md shadow-gray-900/25 transition-all duration-200 hover:-translate-y-0.5 hover:bg-gray-800 hover:shadow-lg hover:shadow-gray-900/30 active:translate-y-0 active:shadow-md focus:outline-none focus:ring-2 focus:ring-gray-900 focus:ring-offset-2 focus:ring-offset-gray-50 dark:bg-white dark:text-gray-900 dark:shadow-black/30 dark:hover:bg-gray-100 dark:focus:ring-white dark:focus:ring-offset-slate-900"
               >
-                Add Task
+                Add Task to Remember
               </button>
               <ThemeToggle
                 theme={theme}
