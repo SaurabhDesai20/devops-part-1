@@ -45,7 +45,7 @@ pipeline {
             steps{
                 sh '''
                 echo "Starting MERN stack with Docker Compose..."
-                docker compose up -d
+                docker-compose up -d
 
                 echo "Showing running containers..."
                 docker ps
