@@ -44,6 +44,9 @@ pipeline {
         stage('Run docker compose'){
             steps{
                 sh '''
+                echo "Stopping old containers if running..."
+                docker compose down || true
+
                 echo "Starting MERN stack with Docker Compose..."
                 docker compose up -d
 
